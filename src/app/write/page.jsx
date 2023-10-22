@@ -13,6 +13,7 @@ import { app } from '@/utils/firebase';
 import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css'
 import Select from 'react-select';
+import { getApiUrl } from '@/utils/apiUrl';
 
 // Initialize highlight.js for code syntax highlighting
 hljs.configure({
@@ -107,8 +108,10 @@ const WritePage = () => {
             .replace(/^-+|-+$/g, "");
   }
 
+  const apiUrl = getApiUrl();
+
   const handleSubmit = async () => {
-    const res = await fetch("http://localhost:3000/api/posts", {
+    const res = await fetch(`/api/posts`, {
       method: "POST",
       body: JSON.stringify({
         title,

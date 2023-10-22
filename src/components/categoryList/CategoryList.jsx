@@ -2,9 +2,12 @@ import React from 'react';
 import styles from "./categoryList.module.css";
 import Link from 'next/link';
 import Image from 'next/image';
+import { getApiUrl } from '@/utils/apiUrl';
+
+const apiUrl = getApiUrl();
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/categories", {cache: "no-store"})
+  const res = await fetch(`${apiUrl}/api/categories`, {cache: "no-store"})
 
   if(!res.ok) {
     throw new Error("Failed to load categories.");

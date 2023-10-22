@@ -2,9 +2,12 @@ import React from 'react';
 import styles from "./cardList.module.css";
 import Pagination from '../pagination/Pagination';
 import Card from '../card/Card';
+import { getApiUrl } from '@/utils/apiUrl';
+
+const apiUrl = getApiUrl();
 
 const getData = async (page, category) => {
-  const res = await fetch(`http://localhost:3000/api/posts?page=${page}&c=${category || ""}`, {cache: "no-store"});
+  const res = await fetch(`${apiUrl}/api/posts?page=${page}&c=${category || ""}`, {cache: "no-store"});
   
   if(!res.ok) {
     throw new Error("Failed to load posts.");

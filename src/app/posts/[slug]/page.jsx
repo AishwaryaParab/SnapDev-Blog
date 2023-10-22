@@ -3,9 +3,12 @@ import styles from "./singlePage.module.css";
 import Menu from '@/components/menu/Menu';
 import Image from 'next/image';
 import Comments from '@/components/comments/Comments';
+import { getApiUrl } from '@/utils/apiUrl';
+
+const apiUrl = getApiUrl();
 
 const getData = async (slug) => {
-    const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {cache: "no-store"});
+    const res = await fetch(`${apiUrl}/api/posts/${slug}`, {cache: "no-store"});
 
     if(!res.ok) {
         throw new Error("Failed to load the post");
