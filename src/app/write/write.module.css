@@ -81,3 +81,7 @@
     cursor: pointer;
     border-radius: 20px;
 }
+
+.publish:hover {
+    background-color: #0f720b;
+}
