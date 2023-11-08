@@ -1,5 +1,6 @@
 import { getAuthSession } from "@/utils/auth";
 import { NextResponse } from "next/server";
+import prisma from "@/utils/connect";
 
 // GET ALL COMMENTS -> http://localhost:3000/api/comments?post=2
 export const GET = async (req) => {

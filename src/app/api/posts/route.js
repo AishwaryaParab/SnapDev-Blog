@@ -1,5 +1,6 @@
 import { getAuthSession } from "@/utils/auth";
 import { NextResponse } from "next/server";
+import prisma from "@/utils/connect";
 
 // GET ALL POSTS
 export const GET = async (req) => {
