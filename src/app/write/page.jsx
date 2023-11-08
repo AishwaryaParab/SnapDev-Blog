@@ -18,6 +18,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ThemeContext } from '@/context/ThemeContext';
 import dynamic from 'next/dynamic';
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 // Initialize highlight.js for code syntax highlighting
 hljs.configure({
@@ -57,7 +58,6 @@ const options = [
 const WritePage = () => {
   const {status} = useSession();
   const router = useRouter();
-  const ReactQuill = dynamic(() => import("react-quill"), { srr: false });
 
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
