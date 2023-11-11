@@ -6,6 +6,8 @@ import { ThemeContextProvider } from '@/context/ThemeContext'
 import ThemeProvider from '@/providers/ThemeProvider'
 import AuthProvider from '@/providers/AuthProvider'
 
+import 'highlight.js/styles/atom-one-dark.css'; // Import the code highlighting style
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

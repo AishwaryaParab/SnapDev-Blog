@@ -5,3 +5,7 @@
 .title {
     margin: 50px 0;
 }
+
+.noPosts {
+    height: calc(100vh - 600px);
+}
