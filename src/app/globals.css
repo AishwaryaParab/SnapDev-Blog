@@ -87,6 +87,7 @@ pre.ql-syntax {
     padding: 20px !important;
     background-color: var(--editorBg);
     border-radius: 4px !important;
+    word-wrap: break-word;
 }
 
 .react-select__option {

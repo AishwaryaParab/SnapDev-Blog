@@ -28,6 +28,7 @@ const Comments = ({ postSlug }) => {
   const [desc, setDesc] = useState("");
 
   const handleSubmit = async () => {
+    setDesc("");
     await fetch(`${apiUrl}/api/comments`, {
         method: "POST",
         body: JSON.stringify({
@@ -43,7 +44,8 @@ const Comments = ({ postSlug }) => {
         <h1 className={styles.title}>Comments</h1>
         {status === "authenticated" ? (
             <div className={styles.write}>
-                <textarea 
+                <textarea
+                value={desc}
                 placeholder="Write a comment..." 
                 className={styles.input}
                 onChange={(e) => {setDesc(e.target.value)}}
