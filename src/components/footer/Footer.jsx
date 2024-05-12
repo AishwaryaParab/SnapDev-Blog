@@ -11,12 +11,11 @@ const Footer = () => {
           <Image src="/logo.png" alt="SnapDev" width={50} height={50} />
           <h1 className={styles.logoText}>SnapDev</h1>
         </div>
-        <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque molestias vero impedit aliquid alias sint quae sit, ullam saepe quidem illo iusto velit quia quibusdam soluta est, dolore ut corrupti!</p>
+        <p className={styles.desc}>Keep coding, keep exploring and never stop learning. Let's build the future, one line of code at a time. Let's connect on socials 👇</p>
         <div className={styles.icons}>
-          <Image src="/facebook.png" alt="" width={18} height={18} />
-          <Image src="/instagram.png" alt="" width={18} height={18} />
-          <Image src="/tiktok.png" alt="" width={18} height={18} />
-          <Image src="/youtube.png" alt="" width={18} height={18} />
+          <Link target="_blank" href="https://www.linkedin.com/in/aishwaryaparab/"><Image src="/linkedin.png" alt="" width={18} height={18} /></Link>
+          <Link target="_blank" href="https://www.youtube.com/@CodeWithAishwarya"><Image src="/youtube.png" alt="" width={18} height={18} /></Link>
+          <Link target="_blank" href="https://github.com/AishwaryaParab"><Image src="/github.png" alt="" width={22} height={22} /></Link>
         </div>
       </div>
       <div className={styles.links}>
@@ -30,10 +29,10 @@ const Footer = () => {
 
         <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
           <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
+          <Link href="/">React</Link>
+          <Link href="/">Next</Link>
+          <Link href="/">Node</Link>
         </div>
 
         <div className={styles.list}>

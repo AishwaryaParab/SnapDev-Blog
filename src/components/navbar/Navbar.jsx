@@ -9,10 +9,9 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.socials}>
-        <Image src="/facebook.png" alt="facebook" width={24} height={24} />
-        <Image src="/instagram.png" alt="instagram" width={24} height={24} />
-        <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
-        <Image src="/youtube.png" alt="youtube" width={24} height={24} />
+        <Link target="_blank" href="https://www.linkedin.com/in/aishwaryaparab/"><Image src="/linkedin.png" alt="" width={24} height={24} /></Link>
+        <Link target="_blank" href="https://www.youtube.com/@CodeWithAishwarya"><Image src="/youtube.png" alt="" width={24} height={24} /></Link>
+        <Link target="_blank" href="https://github.com/AishwaryaParab"><Image src="/github.png" alt="" width={28} height={28} /></Link>
       </div>
       <Link className={styles.logo} href="/">SnapDev</Link>
       <div className={styles.links}>

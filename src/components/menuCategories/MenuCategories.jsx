@@ -5,23 +5,23 @@ import styles from "./menuCategories.module.css";
 const MenuCategories = () => {
   return (
     <div className={styles.categoryList}>
-        <Link href="/blog/c=style" className={`${styles.categoryItem} ${styles.style}`}>
-          Style
-        </Link>
-        <Link href="/blog/c=fashion" className={`${styles.categoryItem} ${styles.fashion}`}>
-          Fashion
-        </Link>
-        <Link href="/blog/c=food" className={`${styles.categoryItem} ${styles.food}`}>
-          Food
-        </Link>
-        <Link href="/blog/c=travel" className={`${styles.categoryItem} ${styles.travel}`}>
+        <Link href="/blog?c=travel" className={`${styles.categoryItem} ${styles.travel}`}>
           Travel
         </Link>
-        <Link href="/blog/c=culture" className={`${styles.categoryItem} ${styles.culture}`}>
-          Culture
+        <Link href="/blog?c=node" className={`${styles.categoryItem} ${styles.node}`}>
+          Node
         </Link>
-        <Link href="/blog/c=coding" className={`${styles.categoryItem} ${styles.coding}`}>
+        <Link href="/blog?c=react" className={`${styles.categoryItem} ${styles.react}`}>
+          React
+        </Link>
+        <Link href="/blog?c=coding" className={`${styles.categoryItem} ${styles.coding}`}>
           Coding
+        </Link>
+        <Link href="/blog?c=next" className={`${styles.categoryItem} ${styles.next}`}>
+          Next
+        </Link>
+        <Link href="/blog?c=novels" className={`${styles.categoryItem} ${styles.novels}`}>
+          Novels
         </Link>
       </div>
   )

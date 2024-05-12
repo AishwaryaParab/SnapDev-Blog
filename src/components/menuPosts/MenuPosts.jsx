@@ -11,7 +11,7 @@ const MenuPosts = ({ withImage }) => {
         <Image className={styles.image} src="/p1.jpeg" alt="" fill />
       </div>}
       <div className={styles.textContainer}>
-        <span className={`${styles.category} ${styles.travel}`}>Travel</span>
+        <span className={`${styles.category} ${styles.coding}`}>Coding</span>
         <h3 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
         <div className={styles.detail}>
           <span className={styles.username}>John Doe</span>
@@ -25,7 +25,7 @@ const MenuPosts = ({ withImage }) => {
         <Image className={styles.image} src="/p1.jpeg" alt="" fill />
       </div>}
       <div className={styles.textContainer}>
-        <span className={`${styles.category} ${styles.culture}`}>Culture</span>
+        <span className={`${styles.category} ${styles.react}`}>React</span>
         <h3 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
         <div className={styles.detail}>
           <span className={styles.username}>John Doe</span>
@@ -39,7 +39,7 @@ const MenuPosts = ({ withImage }) => {
         <Image className={styles.image} src="/p1.jpeg" alt="" fill />
       </div>}
       <div className={styles.textContainer}>
-        <span className={`${styles.category} ${styles.food}`}>Food</span>
+        <span className={`${styles.category} ${styles.next}`}>Next</span>
         <h3 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
         <div className={styles.detail}>
           <span className={styles.username}>John Doe</span>
@@ -53,7 +53,7 @@ const MenuPosts = ({ withImage }) => {
         <Image className={styles.image} src="/p1.jpeg" alt="" fill />
       </div>}
       <div className={styles.textContainer}>
-        <span className={`${styles.category} ${styles.fashion}`}>Fashion</span>
+        <span className={`${styles.category} ${styles.node}`}>Node</span>
         <h3 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
         <div className={styles.detail}>
           <span className={styles.username}>John Doe</span>
