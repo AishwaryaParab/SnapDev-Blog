@@ -11,7 +11,7 @@ const Footer = () => {
           <Image src="/logo.png" alt="SnapDev" width={50} height={50} />
           <h1 className={styles.logoText}>SnapDev</h1>
         </div>
-        <p className={styles.desc}>Keep coding, keep exploring and never stop learning. Let's build the future, one line of code at a time. Let's connect on socials 👇</p>
+        <p className={styles.desc}>Keep coding, keep exploring and never stop learning. Let&apos;s build the future, one line of code at a time. Let&apos;s connect on socials 👇</p>
         <div className={styles.icons}>
           <Link target="_blank" href="https://www.linkedin.com/in/aishwaryaparab/"><Image src="/linkedin.png" alt="" width={18} height={18} /></Link>
           <Link target="_blank" href="https://www.youtube.com/@CodeWithAishwarya"><Image src="/youtube.png" alt="" width={18} height={18} /></Link>
